@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "draggles-extras",
+	"version": "${version}",
+	"name": "Draggle's Extras",
+	"description": "A collection of odds and ends for the functional idiots",
+	"authors": [
+		"Draggle"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/draggles-extras/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.draggle.extras.DragglesExtras"
+		],
+		"client": [
+			"net.draggle.extras.DragglesExtrasClient"
+		],
+		"fabric-datagen": [
+			"net.draggle.extras.DragglesExtrasDataGenerator"
+		]
+	},
+	"mixins": [
+		"draggles-extras.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
